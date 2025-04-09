@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduling</title>
+    <link rel="stylesheet" href="styles.css">
+   <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text for contrast */
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff; /* White background for the container */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #ff69b4; /* Hot pink for headings */
+        }
+        h3 {
+            text-align: left;
+            color: #000; /* Black text for readability */
+            font-size: small;
+            font-weight: normal;
+        }
+        small {
+            color: #000; /* Black text for small notes */
+            margin-top: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #000; /* Black text for labels */
+        }
+        input, textarea, select, button {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ff69b4; /* Hot pink border */
+            border-radius: 4px;
+        }
+        input, textarea, select {
+            background-color: #fff; /* White background for inputs */
+            color: #000; /* Black text for inputs */
+        }
+        button {
+            background-color: #ff69b4; /* Hot pink button */
+            color: #fff; /* White text for button */
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493; /* Darker pink on hover */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style> -->
+</head>
+<body>
+    <img src="C:\Users\Te-Nu-Sal T. Headley\Documents\Site\imgs\Untitled245_20250303191827.png" alt="Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;">
+    <div class="container">
+        <h1>Schedule an Appointment</h1>
+        <form action="/submit-appointment" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            <small>Monday-Friday: 09:00 - 21:00</small>
+            <small>Saturday: 09:00 - 22:00</small>
+            <label for="service">Select a Service:</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="consultation">Wig Installation</option>
+                <option value="therapy">Makeup</option>
+            </select> 
+            <small>A 50% non-refundable downpayment must be made to have your appointment confirmed. Deposits can be made via MMG:+592-663-1616 or at Beauté Bank.</small>
+            <label for="message">Additional Notes:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbzfRgrpt92nNW4lLiZNB2is15W5IExzkc5JSMx76xpIhQ15_VEvrkhTuj_1HrCIhq6h/exec', {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    alert('Form submitted successfully!');
+                    form.reset();
+                } else {
+                    alert('Failed to submit the form.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form.');
+            }
+        });
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>

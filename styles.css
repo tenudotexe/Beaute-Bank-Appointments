@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #ff69b4; /* Hot pink for headings */
+}
+h3 {
+    text-align: left;
+    color: #000; /* Black text for readability */
+    font-size: small;
+    font-weight: normal;
+}
+small {
+    color: #000; /* Black text for small notes */
+    margin-top: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000; /* Black text for labels */
+}
+input, textarea, select, button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff69b4; /* Hot pink border */
+    border-radius: 4px;
+}
+input, textarea, select {
+    background-color: #fff; /* White background for inputs */
+    color: #000; /* Black text for inputs */
+}
+button {
+    background-color: #ff69b4; /* Hot pink button */
+    color: #fff; /* White text for button */
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
