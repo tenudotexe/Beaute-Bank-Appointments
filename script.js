@@ -25,3 +25,4 @@ form.addEventListener('submit', async (e) => {
         alert('An error occurred while submitting the form.');
     }
 });
+
