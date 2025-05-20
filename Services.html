@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauté Bank - Services</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color: #ec90c9">
     <header>
-        <img src="img/logos/Untitled245_20250303191827.png" alt="Beauté Bank Logo" style="display: block; margin: 0 auto; width: 150px; height: auto;">
-        <h1>Our Services</h1>
+      <img
+        src="assets/logo.png"
+        alt="Beauté Bank Logo"
+        style="display: block; margin: 0 auto; width: 150px; height: auto"
+      />
+      <h1>Our Services</h1>
+      <nav class="aptnav">
+        <button class="nav"><a href="index.html">Home</a></button>
+        <button class="nav"><a href="index.html">About Us</a></button>
+        <button class="nav"><a href="services.html">Services</a></button>
+        <button class="nav"><a href="contact.html">Contact</a></button>
+        <button class="nav">
+          <a href="appointments.html">Appointments</a>
+        </button>
+      </nav>
     </header>
     <main>
-        <section class="services">
-            <h2>What We Offer</h2>
-            <p>At Beauté Bank, we provide a range of beauty services to help you look and feel your best. Explore our offerings below:</p>
-            
-            <button class="collapsible">Professional Wig Installation</button>
-            <div class="content">
-                <p>Our experts provide seamless wig installation services to enhance your style and confidence.</p>
-            </div>
+      <section class="services">
+        <h2>What We Offer</h2>
+        <p>
+          At Beauté Bank, we provide a range of beauty services to help you look
+          and feel your best. Explore our offerings below:
+        </p>
 
-            <button class="collapsible">Expert Makeup Services</button>
-            <div class="content">
-                <p>From natural looks to glamorous transformations, our makeup artists are here to bring your vision to life.</p>
-            </div>
-        </section>
-        <section class="policies">
-            <h2>Policies and Guidelines</h2>
-            <p>Please review our policies and guidelines before booking a service:</p>
-            <img src="img/Canva Design (2).png" alt="Policies and Guidelines" style="width: 100%; height: auto; border-radius: 8px;">
-        </section>
+        <button class="collapsible">Professional Wig Installation</button>
+        <div class="content">
+          <p>
+            Our experts provide seamless wig installation services to enhance
+            your style and confidence.
+          </p>
+        </div>
+
+        <button class="collapsible">Expert Makeup Services</button>
+        <div class="content">
+          <p>
+            From natural looks to glamorous transformations, our makeup artists
+            are here to bring your vision to life.
+          </p>
+        </div>
+      </section>
+      <section class="policies">
+        <h2>Policies and Guidelines</h2>
+        <p>
+          Please review our policies and guidelines before booking a service:
+        </p>
+        <img
+          src="assets/policies.png"
+          alt="Policies and Guidelines"
+          style="width: 100%; height: auto; border-radius: 8px"
+        />
+      </section>
     </main>
     <footer>
-        <nav class="aptnav">
-            <button class="nav"><a href="Home.html">Home</a></button>
-            <button class="nav"><a href="#">About Us</a></button>
-            <button class="nav"><a href="Services.html">Services</a></button> 
-            <button class="nav"><a href="Contact Page.html">Contact</a></button>
-            <button class="nav"><a href="Beauté Bank Appointments.html">Appointments</a></button>
-        </nav>
-        <p>&copy; 2025 Beauté Bank. All rights reserved.</p>
+      <p>&copy; 2025 Beauté Bank. All rights reserved.</p>
     </footer>
     <script>
-        const collapsibles = document.querySelectorAll(".collapsible");
-        collapsibles.forEach(button => {
-            button.addEventListener("click", () => {
-                const content = button.nextElementSibling;
-                button.classList.toggle("active");
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
+      const collapsibles = document.querySelectorAll(".collapsible");
+      collapsibles.forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          button.classList.toggle("active");
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
         });
+      });
     </script>
-</body>
+  </body>
 </html>
