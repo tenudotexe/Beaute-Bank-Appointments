@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+/*const form = document.querySelector('form');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     
@@ -25,4 +25,4 @@ form.addEventListener('submit', async (e) => {
         alert('An error occurred while submitting the form.');
     }
 });
-
+*/
