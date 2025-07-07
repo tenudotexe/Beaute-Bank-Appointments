@@ -6,7 +6,7 @@ form.addEventListener('submit', async (e) => {
     const data = Object.fromEntries(formData.entries());
     
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbz0lpvSnVNFWn1YyyFo71bHF9z7mM8GleMTsA6x3EC3KNi9TGzL-6o3KxCJvOcJUoLJ/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbw51yQsornGC6h-1uFzfdMlI35URjBaX7LWS6zy1PeekfoUW9NLSFQYKMmM1MWImyqI/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
