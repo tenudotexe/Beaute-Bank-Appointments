@@ -147,7 +147,7 @@ p {
   background-color: none;
   border-bottom: 10px;
   border-color: #ff69b4;
-  color: white;
+  color: rgb(14, 12, 13);
   cursor: pointer;
   padding: 10px;
   width: 100%;
@@ -161,15 +161,20 @@ p {
 }
 
 .content {
-  padding: 0 15px;
+  background: #582844;
+  padding: 0 16px;
   display: none;
   overflow: hidden;
-  border-radius: 4px;
-  margin-bottom: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
   margin-left: 2px;
   margin-right: 2px;
 }
-
+ .makeup-list {
+  display: inline;
+  padding: 0;
+  margin-top: 20px;
+ }
 footer {
   text-align: center;
   padding-block: 1rem;
